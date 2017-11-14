@@ -1,13 +1,11 @@
 <ion-menu [content]="mycontent">
   <ion-content>
     <ion-list>
-      <ul>
-        <li (click)="TrailersClick()" menuClose >Trailers</li>
-        <li>Trailer</li>
-        <li (click)="LoginClick()" menuClose >Login</li>
-        <li (click)="FavorisClick()" menuClose>Favoris</li>
-        <li (click)="PreferencesClick()" menuClose>Préférences</li>
-      </ul>
+      <ion-item (click)="TrailersClick()" menuClose >Trailers</ion-item>
+      <ion-item>Trailer</ion-item>
+      <ion-item (click)="LoginClick()" menuClose >Login</ion-item>
+      <ion-item (click)="FavorisClick()" menuClose>Favoris</ion-item>
+      <ion-item (click)="PreferencesClick()" menuClose>Préférences</ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
