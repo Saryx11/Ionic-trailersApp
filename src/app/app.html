@@ -2,11 +2,11 @@
   <ion-content>
     <ion-list>
       <ul>
-        <li (click)="TrailersClick()">Trailers</li>
+        <li (click)="TrailersClick()" menuClose >Trailers</li>
         <li>Trailer</li>
-        <li (click)="LoginClick()">Login</li>
-        <li>Favoris</li>
-        <li>Préférences</li>
+        <li (click)="LoginClick()" menuClose >Login</li>
+        <li (click)="FavorisClick()" menuClose>Favoris</li>
+        <li (click)="PreferencesClick()" menuClose>Préférences</li>
       </ul>
     </ion-list>
   </ion-content>
