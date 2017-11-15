@@ -8,5 +8,14 @@
 
 
 <ion-content padding>
-
+  <h1>{{film.title}}</h1>
+  <img src="{{film.poster}}">
+  <h2>Genre</h2>
+  <ion-item *ngFor="let genre of film.genre">
+    <p>{{genre}}</p>
+  </ion-item>
+  <h2>Acteurs</h2>
+  <ion-item *ngFor="let actor of film.actors">
+    <p>{{actor}}</p>
+  </ion-item>
 </ion-content>
