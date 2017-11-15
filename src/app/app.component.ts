@@ -3,15 +3,16 @@ import {NavController, Platform, Nav} from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
+import { TrailersPage } from '../pages/trailers/trailers';
 import {LoginPage} from "../pages/login/login";
 import {FavorisPage} from "../pages/favoris/favoris";
 import {PreferencesPage} from "../pages/preferences/preferences";
+import {TrailerPage} from "../pages/trailer/trailer";
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  rootPage:any = TrailersPage;
   @ViewChild(Nav) nav: Nav;
 
 
@@ -24,7 +25,7 @@ export class MyApp {
     });
   }
   TrailersClick(){
-    this.nav.push(HomePage);
+    this.nav.push(TrailersPage);
   }
   LoginClick(){
     this.nav.push(LoginPage);
