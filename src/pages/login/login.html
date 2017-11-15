@@ -8,15 +8,17 @@
 
 
 <ion-content padding>
-  <form>
+  <form [formGroup]="userForm" (ngSubmit)="submitLogin()">
     <ion-item>
-      <ion-input type="text" ></ion-input>
+      <ion-input placeholder="mail" formControlName="email" type="text" ></ion-input>
+      <p *ngIf="userForm.get('email').invalid">le mail n'est pas valide</p>
     </ion-item>
     <ion-item>
-      <ion-input type="password" ></ion-input>
+      <ion-input placeholder='password' formControlName="password" type="password" ></ion-input>
     </ion-item>
     <ion-item>
       <ion-checkbox></ion-checkbox>
     </ion-item>
+    <button ion-button type="submit" [disabled]="!userForm.valid">Connexion</button>
   </form>
 </ion-content>

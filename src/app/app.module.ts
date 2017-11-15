@@ -14,6 +14,7 @@ import { FavorisPage } from '../pages/favoris/favoris';
 import { NetworkProvider } from '../providers/network/network';
 import { ApiServProvider } from '../providers/api-serv/api-serv';
 import { MovieServProvider } from '../providers/movie-serv/movie-serv';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MovieServProvider } from '../providers/movie-serv/movie-serv';
   imports: [
     BrowserModule,
     HttpClientModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    FormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
