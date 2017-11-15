@@ -15,6 +15,7 @@ import { NetworkProvider } from '../providers/network/network';
 import { ApiServProvider } from '../providers/api-serv/api-serv';
 import { MovieServProvider } from '../providers/movie-serv/movie-serv';
 import {FormsModule} from "@angular/forms";
+import { LoginServProvider } from '../providers/login-serv/login-serv';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import {FormsModule} from "@angular/forms";
     NetworkProvider,
     ApiServProvider,
     MovieServProvider,
-    NetworkProvider
+    NetworkProvider,
+    LoginServProvider
   ]
 })
 export class AppModule {}
